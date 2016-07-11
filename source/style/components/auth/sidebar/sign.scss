@@ -1,0 +1,111 @@
+.sign {
+    position: absolute;
+    width: 33%;
+    height: 100%;
+    background: $dpurple;
+    top: 0;
+    right: 0;
+}
+
+.sign__wrap {
+    @include centrer(80%);
+    text-align: center;
+}
+
+.sign-title {
+    margin-bottom: 30px;
+    display: inline-block;
+}
+
+.sign-title__text {
+    margin: 0;
+    padding: 0;
+    color: $white;
+    font-size: 1.5em;
+    display: block;
+}
+
+.sign-group {
+    margin-bottom: 70px;
+}
+
+.sign-group__wrap {
+    width: 100%;
+    max-width: 400px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.sign-group__input {
+    background: none;
+    border: none;
+    border-bottom: 1px solid $lgray;
+    outline: none;
+    color: $white;
+    padding: 12px 5px;
+    width: 100%;
+    font-size: 1.125em;
+
+    &::-webkit-input-placeholder {
+       color: $white;
+       font-size: 1.125em;
+       opacity: 1;
+    }
+
+    &:-moz-placeholder {
+       color: $white;
+       font-size: 1.125em;
+       opacity: 1;
+    }
+
+    &::-moz-placeholder {
+       color: $white;
+       font-size: 1.125em;
+       opacity: 1;
+    }
+
+    &:-ms-input-placeholder {
+       color: $white;
+       font-size: 1.125em;
+       opacity: 1;
+    }
+}
+
+.sign-group__forgot {
+    position: absolute;
+    right: 0;
+    padding: 12px 5px;
+    color: $gray;
+    text-decoration: none;
+    font-size: 1.125em;
+    @include transition(0.3s);
+    &:hover {
+        color: $white;
+    }
+}
+
+.sign-addition__link {
+    color: $white;
+    text-decoration: none;
+    font-size: 1.125em;
+}
+
+.done {
+    position: absolute;
+    bottom: 3%;
+    right: 3%;
+}
+
+.done__wrap {
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    background: $purple;
+}
+
+.done__ico {
+    font-size: 1.25em;
+    color: $white;
+    @include centrer(100%);
+    text-align: center;
+}

@@ -1,0 +1,31 @@
+.auth {
+    width: 100%;
+    height: 100%;
+    background: url('../img/bg.png') no-repeat;
+    background-size: cover;
+}
+
+.greating {
+    @include centrer(60%);
+}
+
+.greating__wrap {
+    max-width: 350px;
+    text-align: center;
+}
+
+.greating__wrap--invited {
+    max-width: 480px;
+}
+
+.greating__ico {
+    font-size: 10em;
+    color: $white;
+    display: block;
+}
+
+.greating__text {
+    font-size: 1.5em;
+    color: $white;
+    line-height: 1.8;
+}

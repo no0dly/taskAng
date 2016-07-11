@@ -1,5 +1,27 @@
-body {
-  margin: 0;
+//
+@import "components/_variables";
+@import "components/_mixins";
+@import "components/fonts";
+
+// icons
+@import "icons/variables";
+@import "icons/core";
+@import "icons/path";
+@import "icons/icons";
+
+//auth
+@import "components/auth/auth";
+@import "components/auth/sidebar/sign";
+
+html, body, .wrap {
+    width: 100%;
+    height: 100%;
 }
 
-@import 'common/greating';
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $regular;
+}
