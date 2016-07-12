@@ -1,1 +1,51 @@
 extends ../layout/admin-layout.jade
+
+block admin-content
+    .admin-header
+        .search
+            input.search__input(type='text')
+        .people
+            ul.people__list
+                li.people__item
+                    a.people__link.people__link--add(href="#")
+                        img.people__img(src="", alt="")
+                li.people__item
+                    a.people__link(href="#")
+                        img.people__img(src="", alt="")
+                li.people__item
+                    a.people__link(href="#")
+                        img.people__img(src="", alt="")
+                li.people__item
+                    a.people__link(href="#")
+                        img.people__img(src="", alt="")
+                li.people__item
+                    a.people__link(href="#")
+                        img.people__img(src="", alt="")
+                li.people__item
+                    a.people__link.people__link--more(href="#")
+                        .people__more.icons8-more
+
+    .admin-main
+        .tasks
+            .tasks__group
+                .tasks-date
+                    .tasks-date__text Today
+                ul.tasks__list
+                    li.tasks__item.tasks__item--new
+                        .tasks__wrap
+                            .tasks-btn
+                                input.tasks-btn__check(type="checkbox" id="check1")
+                                label.tasks-btn__label(for="check1")
+
+                            .tasks-title
+                                .tasks-title__text Create a company
+
+                            .tasks-assign
+                                ul.tasks-assign__list
+                                    li.tasks-assign__item
+                                        img.tasks-assign__img(src="", alt="")
+                                    li.tasks-assign__item
+                                        img.tasks-assign__img(src="", alt="")
+
+
+
