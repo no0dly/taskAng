@@ -13,8 +13,16 @@
 @import "components/auth/auth";
 @import "components/auth/sidebar/sign";
 
+//admin
+@import "components/admin/sidebar";
+
 html, body, .wrap {
     width: 100%;
+    height: 100%;
+}
+.admin {
+    width: 100%;
+    min-height: 100%;
     height: 100%;
 }
 
@@ -24,4 +32,10 @@ html, body, .wrap {
 
 body {
     font-family: $regular;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }

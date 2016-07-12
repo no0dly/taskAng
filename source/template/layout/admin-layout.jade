@@ -1,0 +1,96 @@
+doctype html
+html
+    include ../components/_head
+    body
+
+        .wrap
+            .admin
+                aside.admin-sidebar.admin-sidebar--left
+                    .admin-sidebar__wrap
+                        .admin-ava
+                            .admin-imgbox
+                                .admin-imgbox__wrap
+                                    img.admin-imgbox__img(src="assets/img/ava.png", alt="ava")
+                            .admin-name
+                                .admin-name__text Trevor Reyes
+                        .projects
+                            .projects__header
+                                .projects-title
+                                    .projects-title__text Projects
+                                .projects-add
+                                    a.projects-add__link.icons8-plus(href="#")
+                            ul.projects__list
+                                li.projects__item
+                                    a.projects__link(href="#")
+                                        .projects-name
+                                            .projects-name__text Private
+                                        .projects-count
+                                            .projects-count__num 8
+                                li.projects__item
+                                    a.projects__link(href="#")
+                                        .projects-name
+                                            .projects-name__text Decode
+                                        .projects-count
+                                            .projects-count__num 25
+                                        .projects-status
+                                            .projects-status__text new
+                                li.projects__item
+                                    a.projects__link(href="#")
+                                        .projects-title
+                                            .projects-name__text Family
+                                            .projects-name__ico.icons8-user
+                                        .projects-count
+                                            .projects-count__num 3
+                                li.projects__item
+                                    a.projects__link(href="#")
+                                        .projects-name
+                                            .projects-name__text Cookle
+                                        .projects-count
+                                            .projects-count__num 13
+                        .priority
+                            .priority__header
+                                .priority-title
+                                    .priority-title__text Priority
+                            ul.priority__list
+                                li.priority__item
+                                    input.priority__radio(type="radio" id='red' name="color")
+                                    label.priority__label.priority__label--red(for="red") Red
+                                li.priority__item
+                                    input.priority__radio(type="radio" id='orange' name="color")
+                                    label.priority__label.priority__label--orange(for="orange") Orange
+                                li.priority__item
+                                    input.priority__radio(type="radio" id='yellow' name="color")
+                                    label.priority__label.priority__label--yellow(for="yellow") Yellow
+                                li.priority__item
+                                    input.priority__radio(type="radio" id='white' name="color")
+                                    label.priority__label.priority__label--white(for="white") White
+                        .tags
+                            .tags__header
+                                .tags-title
+                                    .tags-title__text Project tags
+                                .tags-edit
+                                    a.tags-edit__link.icons8-edit(href="#")
+                            ul.tags__list
+                                li.tags__item
+                                    a.tags__link.tags__link--green(href="#")
+                                        .tags__name HTML
+
+                                li.tags__item
+                                    a.tags__link.tags__link--blue(href="#")
+                                        .tags__name WEB
+
+                                li.tags__item
+                                    a.tags__link.tags__link--pink(href="#")
+                                        .tags__name Design
+
+                                li.tags__item
+                                    a.tags__link.tags__link--brown(href="#")
+                                        .tags__name Server
+
+                    .logout
+                         a.logout__link(href="#") Log out
+                    
+
+
+                section.admin__content
+                    block admin__content

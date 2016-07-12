@@ -1,0 +1,240 @@
+.admin-sidebar--left {
+    width: 330px;
+    min-height: 100%;
+    background: $dpurple;
+    padding: 20px 30px;
+    position: relative;
+}
+
+.admin-ava {
+    margin-bottom: 34px;
+}
+
+.admin-imgbox {
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    border: 1px solid $white;
+    position: absolute;
+}
+
+.admin-imgbox__wrap {
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    @include centrer(50px);
+}
+
+.admin-imgbox__img {
+    width: 100%;
+    height: auto;
+}
+
+.admin-name {
+    margin-left: 78px;
+    padding: 20px 0;
+}
+
+.admin-name__text {
+    color: $white;
+}
+
+.projects {
+    margin-bottom: 40px;
+}
+
+.projects__header {
+    margin-bottom: 12px;
+    padding: 0 20px;
+    @include clearfix;
+}
+
+.projects-title {
+    float: left;
+}
+
+.projects-add {
+    float: right;
+}
+
+.projects-title__text {
+    color: $grayTit;
+    font-size: 0.875em;
+    font-family: $semibold;
+    letter-spacing: 0.8px;
+}
+
+.projects-add__link {
+    color: $white;
+    font-size: 1.125em;
+    text-decoration: none;
+}
+
+.projects__link {
+    display: block;
+    padding: 10px 20px;
+    @include clearfix;
+    text-decoration: none;
+    color: $white;
+    border-radius: 5px;
+    @include transition(0.3s);
+    &:hover {
+        background: $purple;
+    }
+}
+
+.projects-name {
+    float: left;
+}
+
+.projects-count {
+    float: right;
+}
+
+.projects-name__text {
+    display: inline-block;
+}
+
+.projects-name__ico {
+    display: inline-block;
+    color: $gray;
+}
+
+.projects-status {
+    float: right;
+    margin-right: 20px;
+    padding: 2px 6px;
+    background: $orange;
+    border-radius: 3px;
+}
+
+.projects-status__text {
+    font-size: 0.75em;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.priority,
+.tags {
+    @extend .projects;
+    padding: 0 20px;
+}
+
+.priority__header,
+.tags__header {
+    @extend .projects__header;
+    padding: 0;
+}
+
+.priority-title,
+.tags-title {
+    @extend .projects-title;
+}
+
+.priority-title__text,
+.tags-title__text {
+    @extend .projects-title__text;
+}
+
+.priority__item {
+    
+}
+
+.priority__label {
+    color: $white;
+    padding: 12px 20px 12px;
+    display: block;
+    background-repeat: no-repeat;
+    background-position: 0 50%;
+    cursor: pointer;
+    @include transition(0.2s);
+    background-size: 10px 10px;
+    &.priority__label--red {
+        background-image: url('../img/icons/checkbox-red.png');
+    }
+    &.priority__label--orange {
+        background-image: url('../img/icons/checkbox-orange.png');
+    }
+    &.priority__label--yellow {
+        background-image: url('../img/icons/checkbox-yellow.png');
+    }
+    &.priority__label--white {
+        background-image: url('../img/icons/checkbox-white.png');
+    }
+}
+
+
+.priority__radio {
+    display: none;
+    &:checked {
+        & + .priority__label {
+            &.priority__label--red {
+                background-image: url('../img/icons/checkbox-red-checked.png');
+            }
+            &.priority__label--orange {
+                background-image: url('../img/icons/checkbox-orange-checked.png');
+            }
+            &.priority__label--yellow {
+                background-image: url('../img/icons/checkbox-yellow-checked.png');
+            }
+            &.priority__label--white {
+                background-image: url('../img/icons/checkbox-white-checked.png');
+            }
+        }
+    }
+}
+.tags {
+    margin-bottom: 60px;
+}
+
+.tags__header {
+    margin-bottom: 20px;
+}
+
+.tags-title {
+    @extend .projects-title;
+}
+
+.tags-edit {
+    @extend .projects-add;
+}
+.tags-edit__link {
+    @extend .projects-add__link;
+    font-size: 0.875em;
+}
+
+.tags__item {
+    margin-bottom: 10px;
+}
+
+.tags__link {
+    text-decoration: none;
+    color: $white;
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 3px;
+
+    &.tags__link--green {
+        background: $green;
+    }
+    &.tags__link--blue {
+        background: $blue;
+    }
+    &.tags__link--pink {
+        background: $pink;
+    }
+    &.tags__link--brown {
+        background: $brown;
+    }
+}
+
+.logout {
+    position: absolute;
+    bottom: 20px;
+    left: 50px;
+}
+
+.logout__link {
+    color: $white;
+    text-decoration: none;
+}
