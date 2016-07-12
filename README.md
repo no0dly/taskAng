@@ -1,4 +1,3 @@
-# Loftshool builder
 
 Getting started:
 
