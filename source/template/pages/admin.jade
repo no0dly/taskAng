@@ -7,20 +7,20 @@ block admin-content
         .people
             ul.people__list
                 li.people__item
-                    a.people__link.people__link--add(href="#")
-                        img.people__img(src="", alt="")
+                    a.people__link.people__link--add(href="#") 
+                        .icons8-add-user-male
                 li.people__item
                     a.people__link(href="#")
-                        img.people__img(src="", alt="")
+                        img.people__img(src="assets/img/people1.png", alt="people")
                 li.people__item
                     a.people__link(href="#")
-                        img.people__img(src="", alt="")
+                        img.people__img(src="assets/img/people2.png", alt="people")
                 li.people__item
                     a.people__link(href="#")
-                        img.people__img(src="", alt="")
+                        img.people__img(src="assets/img/people3.png", alt="people")
                 li.people__item
                     a.people__link(href="#")
-                        img.people__img(src="", alt="")
+                        img.people__img(src="assets/img/people4.png", alt="people")
                 li.people__item
                     a.people__link.people__link--more(href="#")
                         .people__more.icons8-more
@@ -31,21 +31,184 @@ block admin-content
                 .tasks-date
                     .tasks-date__text Today
                 ul.tasks__list
-                    li.tasks__item.tasks__item--new
+                    li.tasks__item.tasks__item--new.tasks__item--red
+                        .tasks__wrap
+                            .tasks-btn
+                                input.tasks-btn__check(type="checkbox" id="check1")
+                                label.tasks-btn__label(for="check1")
+                            .tasks-content
+                                .tasks-title
+                                    .tasks-title__text Create a company
+
+                                .tasks-assign
+                                    ul.tasks-assign__list
+                                        li.tasks-assign__item
+                                            a.tasks-assign__link(href="#")
+                                                img.tasks-assign__img(src="assets/img/small1.png", alt="small people")
+                                        li.tasks-assign__item
+                                            a.tasks-assign__link(href="#")
+                                                img.tasks-assign__img(src="assets/img/small2.png", alt="small people")
+
+            .tasks__group
+                .tasks-date
+                    .tasks-date__text Tomorrow
+                ul.tasks__list
+                    li.tasks__item.tasks__item--yellow
+                        .tasks__wrap
+                            .tasks-btn
+                                input.tasks-btn__check(type="checkbox" id="check1")
+                                label.tasks-btn__label(for="check1")
+                            .tasks-content
+                                .tasks-title
+                                    .tasks-title__text Call in barber shop
+
+                                .tasks-assign
+                                    ul.tasks-assign__list
+                                        li.tasks-assign__item
+                                            a.tasks-assign__link(href="#")
+                                                img.tasks-assign__img(src="assets/img/small2.png", alt="small people")
+
+            .tasks__group
+                .tasks-date
+                    .tasks-date__text Friday (09.06.2016)
+                ul.tasks__list
+                    li.tasks__item.tasks__item--new.tasks__item--yellow
+                        .tasks__wrap
+                            .tasks-btn
+                                input.tasks-btn__check(type="checkbox" id="check1")
+                                label.tasks-btn__label(for="check1")
+                            
+                            .tasks-content
+                                .tasks-title
+                                    .tasks-title__text Go to the shop
+
+                                .tasks-assign
+                                    ul.tasks-assign__list
+                                        li.tasks-assign__item
+                                            a.tasks-assign__link(href="#")
+                                                img.tasks-assign__img(src="assets/img/small1.png", alt="small people")
+                                        li.tasks-assign__item
+                                            a.tasks-assign__link(href="#")
+                                                img.tasks-assign__img(src="assets/img/small2.png", alt="small people")
+
+                                        li.tasks-assign__item
+                                            a.tasks-assign__link(href="#")
+                                                img.tasks-assign__img(src="assets/img/small3.png", alt="small people")
+
+                                        li.tasks-assign__item
+                                            a.tasks-assign__link(href="#")
+                                                img.tasks-assign__img(src="assets/img/small4.png", alt="small people")
+
+                    li.tasks__item.tasks__item--new.tasks__item--lbrown
                         .tasks__wrap
                             .tasks-btn
                                 input.tasks-btn__check(type="checkbox" id="check1")
                                 label.tasks-btn__label(for="check1")
 
-                            .tasks-title
-                                .tasks-title__text Create a company
+                            .tasks-content
+                                .tasks-title
+                                    .tasks-title__text Call in barber shop
 
-                            .tasks-assign
-                                ul.tasks-assign__list
-                                    li.tasks-assign__item
-                                        img.tasks-assign__img(src="", alt="")
-                                    li.tasks-assign__item
-                                        img.tasks-assign__img(src="", alt="")
+                                .tasks-assign
+                                    ul.tasks-assign__list
+                                        li.tasks-assign__item
+                                            a.tasks-assign__link(href="#")
+                                                img.tasks-assign__img(src="assets/img/small1.png", alt="small people")
+                                        li.tasks-assign__item
+                                            a.tasks-assign__link(href="#")
+                                                img.tasks-assign__img(src="assets/img/small2.png", alt="small people")
+
+            .tasks__group
+                .tasks-date
+                    .tasks-date__text Saturday (10.06.2016)
+                ul.tasks__list
+                    li.tasks__item.tasks__item--new.tasks__item--white
+                        .tasks__wrap
+                            .tasks-btn
+                                input.tasks-btn__check(type="checkbox" id="check1")
+                                label.tasks-btn__label(for="check1")
+                            .tasks-content
+                                .tasks-title
+                                    .tasks-title__text Buy gifts
+
+                                .tasks-assign
+                                    ul.tasks-assign__list
+                                        li.tasks-assign__item
+                                            a.tasks-assign__link(href="#")
+                                                img.tasks-assign__img(src="assets/img/small1.png", alt="small people")
+                                        li.tasks-assign__item
+                                            a.tasks-assign__link(href="#")
+                                                img.tasks-assign__img(src="assets/img/small2.png", alt="small people")
+
+            .tasks__group
+                .tasks-date
+                    .tasks-date__text Sunday (11.06.2016)
+                ul.tasks__list
+                    li.tasks__item.tasks__item--yellow
+                        .tasks__wrap
+                            .tasks-btn
+                                input.tasks-btn__check(type="checkbox" id="check1")
+                                label.tasks-btn__label(for="check1")
+                            .tasks-content
+                                .tasks-title
+                                    .tasks-title__text Brush teeth
+
+                                .tasks-assign
+                                    ul.tasks-assign__list
+                                        li.tasks-assign__item
+                                            a.tasks-assign__link(href="#")
+                                                img.tasks-assign__img(src="assets/img/small2.png", alt="small people")
+
+            .tasks__group
+                .tasks-date
+                    .tasks-date__text Monday (12.06.2016)
+                ul.tasks__list
+                    li.tasks__item.tasks__item--new.tasks__item--yellow
+                        .tasks__wrap
+                            .tasks-btn
+                                input.tasks-btn__check(type="checkbox" id="check1")
+                                label.tasks-btn__label(for="check1")
+                            
+                            .tasks-content
+                                .tasks-title
+                                    .tasks-title__text Buy a plane tickets
+
+                                .tasks-assign
+                                    ul.tasks-assign__list
+                                        li.tasks-assign__item
+                                            a.tasks-assign__link(href="#")
+                                                img.tasks-assign__img(src="assets/img/small1.png", alt="small people")
+                                        li.tasks-assign__item
+                                            a.tasks-assign__link(href="#")
+                                                img.tasks-assign__img(src="assets/img/small2.png", alt="small people")
+
+                                        li.tasks-assign__item
+                                            a.tasks-assign__link(href="#")
+                                                img.tasks-assign__img(src="assets/img/small3.png", alt="small people")
+
+                                        li.tasks-assign__item
+                                            a.tasks-assign__link(href="#")
+                                                img.tasks-assign__img(src="assets/img/small4.png", alt="small people")
+
+                    li.tasks__item.tasks__item--new.tasks__item--lbrown
+                        .tasks__wrap
+                            .tasks-btn
+                                input.tasks-btn__check(type="checkbox" id="check1")
+                                label.tasks-btn__label(for="check1")
+
+                            .tasks-content
+                                .tasks-title
+                                    .tasks-title__text Fly away to the Thailand
+
+                                .tasks-assign
+                                    ul.tasks-assign__list
+                                        li.tasks-assign__item
+                                            a.tasks-assign__link(href="#")
+                                                img.tasks-assign__img(src="assets/img/small1.png", alt="small people")
+                                        li.tasks-assign__item
+                                            a.tasks-assign__link(href="#")
+                                                img.tasks-assign__img(src="assets/img/small2.png", alt="small people")
+
 
 
 

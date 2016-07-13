@@ -1,10 +1,6 @@
 .admin-sidebar--left {
-    width: 330px;
-    min-height: 100%;
     background: $dpurple;
-    padding: 20px 30px;
-    position: relative;
-    float: left;
+    // padding: 20px 30px;
 }
 
 .admin-ava {
@@ -232,7 +228,7 @@
 .logout {
     position: absolute;
     bottom: 20px;
-    left: 50px;
+    left: 20px;
 }
 
 .logout__link {

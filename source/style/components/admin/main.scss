@@ -1,0 +1,47 @@
+.admin__content {
+    width: 75%;
+    position: relative;
+    display: table-cell;
+    background: $llgray;
+    @media (max-width: 1050px) {
+        width: 70%;
+    }
+
+    @media (max-width: 870px) {
+        width: 60%;
+    }
+}
+
+.admin-sidebar--left {
+    display: table-cell;
+    width: 25%;
+    position: relative;
+    @media (max-width: 1050px) {
+        width: 30%;
+    }
+
+    @media (max-width: 870px) {
+        width: 40%;
+    }
+}
+
+.admin {
+    @include clearfix;
+    min-width: 1200px;
+    height: 100%;
+    width: 100%;
+    min-height: 100%;
+    display: table;
+}
+
+.plus {
+    @extend .done;
+    bottom: 20px;
+    .plus__wrap {
+        @extend .done__wrap;
+        .plus__ico {
+            @extend .done__ico;
+            font-size: 1.8125em;
+        }
+    }
+}

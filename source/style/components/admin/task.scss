@@ -1,0 +1,142 @@
+.tasks {
+    margin-bottom: 100px;
+}
+
+.tasks__group {
+    width: 80%;
+    margin: 0 auto 20px;
+    padding: 0 70px;
+}
+
+.tasks-date {
+    margin-left: 5px;
+    margin-bottom: 10px;
+}
+
+.tasks__list {
+    border-radius: 10px;
+    background: $white;
+    box-shadow: 2px 2px 15px 0px $grayLine;
+    overflow: hidden;
+    position: relative;
+}
+
+.tasks-date__text {
+    font-family: $semibold;
+    color: $lgray;
+}
+
+.tasks__item {
+    position: relative;
+    &:after {
+        position: absolute;
+        content: '';
+        width: 10px;
+        height: 100%;
+        top: 0;
+        left: 0;
+    }
+
+    &.tasks__item--red:after {
+        background: $red;
+    }
+    &.tasks__item--yellow:after {
+        background: $yellow;
+    }
+    &.tasks__item--lbrown:after {
+        background: $lbrown;
+    }
+
+    &:before {
+        content: '';
+        height: 1px;
+        width: 80%;
+        position: absolute;
+        background: $grayLine;
+        text-align: center;
+        left: 50%;
+        margin-left: -40%;
+    }
+}
+
+.tasks__wrap {
+    position: relative;
+    padding: 10px 0;
+}
+
+.tasks-btn {
+    left: 20px;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    margin-top: -25px;
+}
+
+.tasks-btn__check {
+    display: none;
+}
+
+.tasks-btn__label {
+    background: url('../img/icons/task.png') no-repeat 50% 50%;
+    background-size: 20px 20px;
+    width: 50px;
+    height: 50px;
+    display: block;
+    cursor: pointer;
+    padding-right: 20px;
+}
+
+.tasks-content {
+    @include clearfix;
+    // padding: 10px 0 10px 80px;
+    padding-left: 80px;
+    position: relative;
+    &:before {
+        content: '';
+        width: 1px;
+        display: block;
+        height: 100%;
+        position: absolute;
+        background: $grayLine;
+        top: 0;
+    }
+}
+
+.tasks-title {
+    float: left;
+    padding: 10px 0;
+    max-width: 400px;
+    position: relative;
+
+}
+
+.tasks-title__text {
+    margin-left: 15px;
+}
+
+.tasks-assign {
+    float: right;
+}
+
+.tasks-assign__list {
+    @include clearfix;
+    padding: 10px 20px;
+}
+
+.tasks-assign__item {
+    float: left;
+    margin-left: 10px;
+    width: 20px;
+    height: 20px;
+}
+
+.tasks-assign__link {
+    font-size: 0;
+    display: block;
+}
+
+.tasks-assign__img {
+    width: 100%;
+    height: auto;
+}
