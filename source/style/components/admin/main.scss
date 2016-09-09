@@ -45,3 +45,23 @@
         }
     }
 }
+
+.no-task {
+    @include centrer(200px);
+}
+
+.no-task__wrap {
+    max-width: 250px;
+    text-align: center;
+}
+
+.no-task__ico {
+   font-size: 10em;
+    color: $lpurple;
+    display: block; 
+}
+
+.no-task__text {
+    color: $lpurple;
+    font-size: 1.5em;
+}

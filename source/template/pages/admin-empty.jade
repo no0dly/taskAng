@@ -1,0 +1,59 @@
+extends ../layout/admin-layout.jade
+
+block admin-content
+    .admin-header
+        .search
+            input.search__input(type='text')
+        .people
+            ul.people__list
+                li.people__item
+                    a.people__link.people__link--add(href="#") 
+                        .icons8-add-user-male
+                li.people__item
+                    a.people__link(href="#")
+                        img.people__img(src="assets/img/people1.png", alt="people")
+                li.people__item
+                    a.people__link(href="#")
+                        img.people__img(src="assets/img/people2.png", alt="people")
+                li.people__item
+                    a.people__link(href="#")
+                        img.people__img(src="assets/img/people3.png", alt="people")
+                li.people__item
+                    a.people__link(href="#")
+                        img.people__img(src="assets/img/people4.png", alt="people")
+                li.people__item
+                    a.people__link.people__link--more(href="#")
+                        .people__more.icons8-more
+    .no-task
+        .no-task__wrap
+            .no-task__ico.icons8-todo-list
+            .no-task__text Have a good day
+
+    .admin-sidebar.admin-sidebar--right
+            .right-sidebar__header
+                .right-sidebar-close
+                    .right-sidebar-close__icon.icons8-delete-2
+                    .right-sidebar-close__text ESC
+                .right-sidebar-head
+                    .right-sidebar-head__text Call in barber shop
+                .right-sidebar-addit
+                    .right-sidebar-addit__edit.icons8-edit
+                    .right-sidebar-addit__edit.icons8-delete
+            .right-sidebar__main
+                .right-sidebar-content
+                    .right-sidebar-content__text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    .right-sidebar-tags
+                        ul.right-sidebar-tags__list
+                            li.right-sidebar-tags__item
+                                a.right-sidebar-tags__link(href="#") WEB
+                            li.right-sidebar-tags__item
+                                a.right-sidebar-tags__link(href="#") HTML
+                    .right-sidebar-ava
+                        .right-sidebar-ava__box
+                            img.right-sidebar-ava__img(src="", alt="")
+                        .right-sidebar-name
+                            .right-sidebar-name__text Harold Morton
+                    .right-sidebar-title
+                        .right-sidebar-title__text Assignee
+
+

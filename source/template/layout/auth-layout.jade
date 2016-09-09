@@ -1,9 +1,9 @@
 doctype html
 html
     include ../components/_head
-    body
+    body(ng-app="myApp")
 
-        .wrap
+        .wrap(ui-view)
             .auth
                 section.main
                     block main
